@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenrola Brasil 2026 - Renegocie com até 90% de Desconto</title>
-  <meta name="description" content="Renegocie suas dívidas com até 90% de desconto no Novo Desenrola Brasil. Preencha seus dados e simule agora.">
+  <title>Desenrola Brasil 2026 - Até 90% de Desconto nas suas Dívidas</title>
+  <meta name="description" content="Renegocie agora suas dívidas com até 90% de desconto. Programa do Governo Federal.">
   
   <style>
     :root {
@@ -13,119 +13,145 @@
       --dark: #001f5c;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      line-height: 1.6;
-      color: #333;
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+
+    /* Header + Logo */
+    header {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      padding: 12px 0;
     }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    .logo { font-size: 1.8rem; font-weight: bold; color: var(--blue); }
 
     /* Hero */
     .hero {
-      background: linear-gradient(rgba(0, 48, 135, 0.85), rgba(0, 31, 92, 0.9)), 
-                  url('https://images.unsplash.com/photo-1554224155-6726b9b5d8b3?w=1600') center/cover;
+      background: linear-gradient(rgba(0,48,135,0.88), rgba(0,31,92,0.9)), url('https://images.unsplash.com/photo-1554224155-6726b9b5d8b3?w=1600') center/cover;
       color: white;
       text-align: center;
-      padding: 220px 20px 120px;
+      padding: 240px 20px 140px;
+      margin-top: 70px;
     }
-    .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 16px;
-    }
-    .hero p {
-      font-size: 1.4rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
+    .hero h1 { font-size: 3.6rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.5rem; max-width: 800px; margin: 0 auto 30px; }
 
     .btn {
       background: var(--green);
       color: white;
-      padding: 16px 40px;
-      font-size: 1.25rem;
+      padding: 18px 45px;
+      font-size: 1.3rem;
       border-radius: 50px;
       text-decoration: none;
-      border: none;
-      cursor: pointer;
+      display: inline-block;
       transition: 0.3s;
     }
-    .btn:hover {
-      transform: scale(1.08);
-      background: #008f42;
-    }
+    .btn:hover { transform: scale(1.08); }
 
-    section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+    section { padding: 90px 20px; max-width: 1200px; margin: 0 auto; }
     .form-section {
       background: white;
-      border-radius: 20px;
-      padding: 60px 40px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-    }
-    .form-section h2 {
-      text-align: center;
-      color: var(--blue);
-      margin-bottom: 40px;
-      font-size: 2.4rem;
+      border-radius: 24px;
+      padding: 60px 50px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
     }
 
-    form { max-width: 700px; margin: 0 auto; display: grid; gap: 20px; }
-    label { font-weight: 600; margin-bottom: 6px; display: block; color: #222; }
+    form { max-width: 680px; margin: 0 auto; display: grid; gap: 22px; }
+    label { font-weight: 600; color: #222; margin-bottom: 6px; }
     input, select {
-      width: 100%;
-      padding: 16px;
-      border: 2px solid #ddd;
-      border-radius: 10px;
+      padding: 16px 18px;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
       font-size: 1.1rem;
     }
-    input:focus, select:focus {
-      border-color: var(--green);
-      outline: none;
+    input:focus, select:focus { border-color: var(--green); outline: none; }
+
+    /* Selos */
+    .selos {
+      text-align: center;
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .selo {
+      background: white;
+      padding: 12px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      font-weight: bold;
+      font-size: 0.95rem;
     }
 
-    /* Botão Flutuante WhatsApp */
+    /* FAQ */
+    .faq h3 {
+      color: var(--blue);
+      margin: 25px 0 10px;
+    }
+
+    /* WhatsApp Flutuante */
     .whatsapp-float {
       position: fixed;
       bottom: 25px;
       right: 25px;
       background: #25D366;
       color: white;
-      width: 65px;
-      height: 65px;
+      width: 68px;
+      height: 68px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 35px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      z-index: 1000;
+      font-size: 38px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      z-index: 9999;
       transition: 0.3s;
     }
-    .whatsapp-float:hover {
-      transform: scale(1.15);
-    }
+    .whatsapp-float:hover { transform: scale(1.12); }
 
-    footer {
-      background: var(--dark);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
+    footer { background: var(--dark); color: white; text-align: center; padding: 50px 20px; }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Desenrola Brasil</div>
+    </div>
+  </header>
+
+  <!-- Hero -->
   <section class="hero">
-    <h1>Novo Desenrola Brasil 2026</h1>
-    <p><strong>Descontos de até 90%</strong> • Juros baixos • Até 48x para pagar</p>
-    <a href="#preencher" class="btn">SIMULAR MINHA RENEGOCIAÇÃO AGORA</a>
+    <h1>Renegocie suas Dívidas com Até <span style="color:#00ff9d;">90% de Desconto</span></h1>
+    <p>Programa do Governo Federal • Juros reduzidos • Parcelamento em até 48x</p>
+    <a href="#preencher" class="btn">QUERO SIMULAR MINHA RENEGOCIAÇÃO AGORA</a>
   </section>
 
   <section id="preencher" class="form-section">
-    <h2>Preencha seus dados para simular</h2>
-    
+    <h2 style="text-align:center; font-size:2.5rem; margin-bottom:20px;">Preencha seus dados</h2>
+    <p style="text-align:center; margin-bottom:40px; color:#555;">Leva menos de 1 minuto • Totalmente gratuito</p>
+
+    <div class="selos">
+      <div class="selo">🔒 Site Seguro</div>
+      <div class="selo">🏛️ Governo Federal</div>
+      <div class="selo">✅ Desnegativação Rápida</div>
+    </div>
+
     <form id="formDesenrola" action="https://formspree.io/f/xgoqqvey" method="POST">
       <div>
         <label>Nome completo</label>
-        <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+        <input type="text" name="nome" placeholder="Seu nome completo" required>
       </div>
       <div>
         <label>CPF</label>
@@ -154,20 +180,33 @@
         </select>
       </div>
 
-      <button type="submit" class="btn" style="width:100%; margin-top: 10px;">ENVIAR DADOS E SIMULAR</button>
+      <button type="submit" class="btn" style="width:100%; margin-top:20px;">ENVIAR DADOS E SIMULAR MINHA RENEGOCIAÇÃO</button>
     </form>
   </section>
 
-  <!-- Botão Flutuante WhatsApp -->
-  <a href="https://wa.me/55SEUNUMEROAQUI" target="_blank" class="whatsapp-float">
+  <!-- FAQ -->
+  <section class="faq" style="background:#f8f9fa;">
+    <h2 style="text-align:center; margin-bottom:40px; font-size:2.4rem;">Perguntas Frequentes</h2>
+    <div style="max-width:800px; margin:0 auto;">
+      <h3>❓ Quem pode participar?</h3>
+      <p>Pessoas com renda de até 5 salários mínimos e dívidas em atraso.</p>
+      
+      <h3>❓ Qual o desconto máximo?</h3>
+      <p>Até 90% do valor da dívida, dependendo do banco e do caso.</p>
+      
+      <h3>❓ É seguro preencher meus dados?</h3>
+      <p>Sim. Seus dados são enviados apenas para análise de renegociação.</p>
+    </div>
+  </section>
+
+  <!-- Botão WhatsApp Flutuante -->
+  <a href="https://wa.me/55" target="_blank" class="whatsapp-float">
     💬
   </a>
 
   <footer>
-    <p><strong>Desenrola Brasil 2026</strong> — Simulador demonstrativo</p>
-    <p style="margin-top: 10px; font-size: 0.9rem;">
-      Este é um site demonstrativo. O programa oficial é do Governo Federal.
-    </p>
+    <p><strong>Desenrola Brasil 2026</strong> — Simulador Educativo</p>
+    <p style="margin-top:10px; font-size:0.9rem;">Este site não é o oficial do Governo. É um simulador demonstrativo.</p>
   </footer>
 
   <script>
@@ -180,10 +219,9 @@
       e.target.value = v;
     });
 
-    // Mensagem de sucesso
     document.getElementById('formDesenrola').addEventListener('submit', function() {
       setTimeout(() => {
-        alert('✅ Dados enviados com sucesso!\nEm breve entraremos em contato pelo WhatsApp.');
+        alert('✅ Dados recebidos com sucesso!\nEm breve entraremos em contato.');
       }, 800);
     });
   </script>
