@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- === SEO PRINCIPAL === -->
+  <title>Desenrola Brasil 2026 - Renegocie Dívidas com até 90% de Desconto</title>
+  <meta name="description" content="Renegocie suas dívidas de cartão de crédito, CDC, cheque especial e mais com até 90% de desconto no Novo Desenrola Brasil. Preencha seus dados e simule agora.">
+  <meta name="keywords" content="desenrola brasil, renegociar dívidas, quitar dívidas, desconto dívida, desenrola 2026, governo federal">
+  <meta name="robots" content="index, follow">
+
+  <!-- Google Verification (deixe comentado por enquanto) -->
+  <!-- <meta name="google-site-verification" content="COLE_AQUI_O_CODIGO_DO_SEARCH_CONSOLE" /> -->
+
+  <!-- Open Graph (bom para quando compartilharem no WhatsApp/Facebook) -->
+  <meta property="og:title" content="Desenrola Brasil 2026 - Até 90% de Desconto">
+  <meta property="og:description" content="Renegocie suas dívidas agora com condições especiais do Governo Federal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://SEUUSUARIO.github.io/desenrola-brasil/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-6726b9b5d8b3">
+
+  <style>
+    :root { --green: #00A84F; --dark: #003087; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; }
+
+    header {
+      background: linear-gradient(135deg, var(--dark), #0052CC);
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    .logo { font-size: 1.8rem; font-weight: bold; text-align: center; }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1554224155-6726b9b5d8b3?w=1600') center/cover;
+      color: white;
+      text-align: center;
+      padding: 180px 20px 120px;
+    }
+    .hero h1 { font-size: 3.2rem; margin-bottom: 15px; }
+
+    .btn {
+      background: var(--green);
+      color: white;
+      padding: 16px 40px;
+      font-size: 1.3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+    .form-section { background: #f8f9fa; border-radius: 20px; padding: 50px 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    form { max-width: 700px; margin: 0 auto; display: grid; gap: 20px; }
+    label { font-weight: bold; margin-bottom: 5px; display: block; }
+    input, select { width: 100%; padding: 14px; border: 2px solid #ddd; border-radius: 8px; font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+
+  <header><div class="logo">Desenrola Brasil</div></header>
+
+  <section class="hero">
+    <h1>Novo Desenrola Brasil 2026</h1>
+    <p><strong>Descontos de até 90%</strong> • Juros baixos • Até 48x para pagar</p>
+  </section>
+
+  <section class="form-section">
+    <h2 style="text-align:center; margin-bottom:30px; color: var(--dark);">Preencha seus dados para simular</h2>
+    
+    <form id="formDesenrola" action="https://formspree.io/f/xgoqqvey" method="POST">
+      <div>
+        <label>Nome completo</label>
+        <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+      </div>
+      <div>
+        <label>CPF</label>
+        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+      </div>
+      <div>
+        <label>E-mail</label>
+        <input type="email" name="email" placeholder="seuemail@email.com" required>
+      </div>
+      <div>
+        <label>Telefone (WhatsApp)</label>
+        <input type="tel" name="telefone" placeholder="(11) 99999-9999" required>
+      </div>
+      <div>
+        <label>Valor aproximado da dívida (R$)</label>
+        <input type="number" name="valor_divida" placeholder="8500" required>
+      </div>
+      <div>
+        <label>Tipo de dívida</label>
+        <select name="tipo_divida" required>
+          <option value="">Selecione</option>
+          <option value="Cartão de Crédito">Cartão de Crédito</option>
+          <option value="CDC / Empréstimo">CDC / Empréstimo</option>
+          <option value="Cheque Especial">Cheque Especial</option>
+          <option value="Outros">Outros</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">ENVIAR DADOS E SIMULAR RENEGOCIAÇÃO</button>
+    </form>
+  </section>
+
+  <script>
+    // Máscara CPF
+    document.getElementById('cpf').addEventListener('input', function(e) {
+      let v = e.target.value.replace(/\D/g, '');
+      v = v.replace(/(\d{3})(\d)/, '$1.$2');
+      v = v.replace(/(\d{3})(\d)/, '$1.$2');
+      v = v.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+      e.target.value = v;
+    });
+
+    // Mensagem de sucesso
+    const form = document.getElementById('formDesenrola');
+    form.addEventListener('submit', function() {
+      setTimeout(() => {
+        alert('✅ Dados enviados com sucesso!\nEm breve entraremos em contato.');
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
