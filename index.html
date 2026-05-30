@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- === VERIFICAÇÃO GOOGLE SEARCH CONSOLE === -->
-  <meta name="google-site-verification" content="8d7R4Uau2R36zbsg8uVVsRymo4RJ7HATiyiZksYm_Qg" />
+  <!-- === CÓDIGO DE VERIFICAÇÃO GOOGLE (GitHub Pages) === -->
+  <meta name="google-site-verification" content="zsdAMWa95PgfS33EDBCqmoV9CzDR1-Q0p9qQAdsRTes" />
   
   <title>Desenrola Brasil 2026 - Renegocie com Até 90% de Desconto</title>
-  <meta name="description" content="Renegocie suas dívidas com até 90% de desconto no Novo Desenrola Brasil. Preencha seus dados e simule agora.">
+  <meta name="description" content="Renegocie suas dívidas com até 90% de desconto no Novo Desenrola Brasil.">
 
   <style>
     :root {
@@ -93,23 +93,19 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <div class="logo">Desenrola Brasil</div>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
     <h1>Renegocie suas Dívidas com Até <span style="color:#00ff9d;">90% de Desconto</span></h1>
-    <p>Programa do Governo Federal • Juros reduzidos • Parcelamento em até 48x</p>
-    <a href="#preencher" class="btn">QUERO SIMULAR MINHA RENEGOCIAÇÃO AGORA</a>
+    <p>Programa do Governo Federal • Juros reduzidos • Até 48x</p>
+    <a href="#preencher" class="btn">SIMULAR RENEGOCIAÇÃO AGORA</a>
   </section>
 
-  <!-- Restante do site (formulário, FAQ, etc) permanece igual -->
   <section id="preencher" class="form-section">
-    <h2 style="text-align:center; font-size:2.5rem; margin-bottom:20px;">Preencha seus dados</h2>
-    <p style="text-align:center; margin-bottom:40px; color:#555;">Leva menos de 1 minuto • Totalmente gratuito</p>
-
+    <h2 style="text-align:center; font-size:2.5rem;">Preencha seus dados</h2>
+    
     <form id="formDesenrola" action="https://formspree.io/f/xgoqqvey" method="POST">
       <div>
         <label>Nome completo</label>
@@ -142,14 +138,11 @@
         </select>
       </div>
 
-      <button type="submit" class="btn" style="width:100%; margin-top:20px;">ENVIAR DADOS E SIMULAR</button>
+      <button type="submit" class="btn" style="width:100%; margin-top:20px;">ENVIAR E SIMULAR</button>
     </form>
   </section>
 
-  <!-- Botão WhatsApp Flutuante -->
-  <a href="https://wa.me/55" target="_blank" class="whatsapp-float">
-    💬
-  </a>
+  <a href="https://wa.me/55" target="_blank" class="whatsapp-float">💬</a>
 
   <footer>
     <p><strong>Desenrola Brasil 2026</strong> — Simulador Educativo</p>
@@ -162,12 +155,6 @@
       v = v.replace(/(\d{3})(\d)/, '$1.$2');
       v = v.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
       e.target.value = v;
-    });
-
-    document.getElementById('formDesenrola').addEventListener('submit', function() {
-      setTimeout(() => {
-        alert('✅ Dados enviados com sucesso!');
-      }, 800);
     });
   </script>
 </body>
