@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloqueia pastas desnecessárias
+Disallow: /private/
+Disallow: /admin/
+
+# Aponta para o sitemap
+Sitemap: https://desenrolabrasil2026.netlify.app/sitemap.xml
